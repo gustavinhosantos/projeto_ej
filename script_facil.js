@@ -1,6 +1,6 @@
 const tabuleiro = document.getElementById("tabuleiro");
 const espacos = document.querySelectorAll(".espaco");
-
+//const butao = document.getElementById("button");
 
 let jogador = "X";
 let computador = "O";
@@ -32,7 +32,7 @@ function ganhou(){
         espacos[combo[2]].textContent === jogador){
             acabou = true;
             alert(`Jogador ${jogador} venceu!`);
-            //ir para a tela03.html
+            document.location.href="./tela03.html";
             break;
 
         }if (
@@ -41,7 +41,7 @@ function ganhou(){
         espacos[combo[2]].textContent === computador){
             acabou = true;
             alert(`Jogador ${computador} venceu!`);
-            //ir para a tela03.html
+            document.location.href="./tela03.html";
             break;
         }
         /*
